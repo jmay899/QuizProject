@@ -37,16 +37,18 @@ body {
 }
 
 .intro {
-    opacity: 0;
-    background: #fff;
-    border-radius:5px;
-    pointer-events: none
-    }
+  width: 540px;
+  opacity: 0;
+  background: #fff;
+  border-radius:5px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale (0.9);
+}
 
 .intro .introTitle {
     width: 100%;
     height: 60px;
-
     align-items: center;
     display: flex;
     justify-content: center;
@@ -88,6 +90,7 @@ body {
     font-weight: 500;
     cursor: pointer;
     border-color: dodgerblue;
+    transition: all 0.3s ease;
 }
 
 .intro .buttons button.startNew {
@@ -101,12 +104,13 @@ body {
 }
 
 .quizMain {
-    width: 550px;
+    width: 50%;
     background: #fff;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
 
 .quizMain header {
@@ -149,6 +153,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
 .quizMain section .optionList .option:last-child {
@@ -190,10 +195,6 @@ body {
     padding: 0 5px;
 }
 
-/* .quizMain footer .totalQuestionNum span p:first-child {
-    padding-left: 0px;
-} */
-
 .quizMain footer .nextButton {
     height: 40px;
     padding: 0 13px;
@@ -207,6 +208,7 @@ body {
     border: 1px solid dodgerblue;
     pointer-events: none;
     opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .quizMain footer .nextButton.activeNextButton {
@@ -229,6 +231,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
 }
 
 .resultsBox .icon {
@@ -271,4 +274,5 @@ body {
     border-radius: 5px;
     border: 1px solid dodgerblue;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
