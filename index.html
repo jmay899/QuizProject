@@ -1,16 +1,64 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Jacob Mayfield's Personal Portfolio</title>
+    <title>Jacob's Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="banner">
-        <div class="maxWidth">
-            <div class="nameLogo"><a href="#">Jacob Mayfield</a></div>
+    <div class="startButton"><button>Start Quiz</button></div>
+
+    <!--Intro-->
+    <div class="intro">
+        <div class="introTitle">
+            Welcome to the quiz!
         </div>
-    </nav>
+        <div class="introList">
+            <div class="info">You will be asked a series of 5 questions.</div>
+            <div class="info">After selecting an answer, you will be told if your selection is correct or incorrect.</div>
+            <div class="info">Your score will be tallied, with a final grade given at the end.</div>
+            <div class="info"><span style="text-align: center"><br>Are you ready?</span></div>
+        </div>
+        <div class="buttons">
+            <button class="startNew">Continue</button>
+            <!-- <button class="change">Change</button> -->
+            <button class="quit">Exit</button>
+        </div>
+    </div>
+
+    <!--Main Quiz-->
+    <div class="quizMain">
+        <header>
+            Jacob's Quiz App
+        </header>
+        <section>
+            <div class="questionText"></div>
+            <div class="optionList"></div>
+        </section>
+        <footer>
+            <div class="totalQuestionNum"></div>
+            <button class="nextButton">Next</button>
+        </footer>
+    </div>
+
+    <!--Results-->
+    <div class="resultsBox">
+        <div class="icon">
+            <i></i>
+        </div>
+        <div class="finishedText">Quiz complete!</div>
+        <div class="scoreText">
+
+        </div>
+        <div class="buttons">
+            <button class="startNew">Try Again</button>
+            <button class="quit">Exit</button>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/questions.js"></script>
+
 </body>
 
 </html>
