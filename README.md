@@ -7,5 +7,4 @@
 
 #### Planned features:
 1. Multiple sets of questions
-2. Simple animations
-3. Better design
+2. Better design
